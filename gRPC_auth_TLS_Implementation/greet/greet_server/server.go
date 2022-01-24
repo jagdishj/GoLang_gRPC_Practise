@@ -96,16 +96,21 @@ func main() {
 		log.Fatalf("failed to listen : %v", err)
 	}
 
-	certFile := "ssl/server.crt"
-	keyFile := "ssl/server.pem"
-	creds, sslerr := credentials.NewServerTLSFromFile(certFile, keyFile)
+	tls := false
+	var opts grpc.ServerOption
+	if tls {
+		certFile := "ssl/server.crt"
+		keyFile := "ssl/server.pem"
+		creds, sslerr := credentials.NewServerTLSFromFile(certFile, keyFile)
 
-	if sslerr != nil {
-		log.Fatalf("Failed to Loading certificates: %v", sslerr)
-		return
+		if sslerr != nil {
+			log.Fatalf("Failed to Loading certificates: %v", sslerr)
+			return
+		}
+
+		opts = grpc.Creds(creds)
 	}
 
-	opts := grpc.Creds(creds)
 	s := grpc.NewServer(opts)
 	greetpb.RegisterGreetServiceServer(s, &server{})
 
