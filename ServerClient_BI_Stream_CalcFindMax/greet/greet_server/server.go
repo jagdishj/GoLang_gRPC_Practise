@@ -51,6 +51,7 @@ func (*server) LongGreet(stream greetpb.GreetService_LongGreetServer) error {
 			stream.SendAndClose(&greetpb.LongGreetResponse{
 				Result: result,
 			})
+			break
 		}
 		if err != nil {
 			log.Fatalf("Error while reading the client stream %v", err)
@@ -59,6 +60,7 @@ func (*server) LongGreet(stream greetpb.GreetService_LongGreetServer) error {
 		firstname := req.GetGreeting().GetFirstName()
 		result += firstname + "! "
 	}
+	return nil
 }
 
 func (*server) GreetEveryone(stream greetpb.GreetService_GreetEveryoneServer) error {

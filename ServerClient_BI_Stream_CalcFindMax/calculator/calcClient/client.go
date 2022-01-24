@@ -23,7 +23,7 @@ func main() {
 
 	c := calcpb.NewCalcServiceClient(cc)
 
-	fmt.Printf("Created client: %f\n", c)
+	//fmt.Printf("Created client: %f\n", c)
 
 	//doUnary(c)
 
@@ -56,7 +56,7 @@ func doServerStreaming(c calcpb.CalcServiceClient) {
 	fmt.Println("Starting to do a ServerStreaming RPC...")
 
 	req := &calcpb.PrimaNumberDecoRequest{
-		Number: 123903928,
+		Number: 13,
 	}
 
 	stream, err := c.PrimeNumberDecomposition(context.Background(), req)
