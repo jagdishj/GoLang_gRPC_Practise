@@ -97,7 +97,7 @@ func main() {
 	}
 
 	tls := false
-	var opts grpc.ServerOption
+	opts := []grpc.ServerOption{}
 	if tls {
 		certFile := "ssl/server.crt"
 		keyFile := "ssl/server.pem"
@@ -108,10 +108,10 @@ func main() {
 			return
 		}
 
-		opts = grpc.Creds(creds)
+		opts = append(opts, grpc.Creds(creds))
 	}
 
-	s := grpc.NewServer(opts)
+	s := grpc.NewServer(opts...)
 	greetpb.RegisterGreetServiceServer(s, &server{})
 
 	if err := s.Serve(lis); err != nil {
