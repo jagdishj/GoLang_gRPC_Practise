@@ -57,9 +57,9 @@ Bi-Directional API Calc Find Maximum: <img src="Screenshots\Bi-DirectionStreamin
 gRPC Error Implementation: <img src="Screenshots\Error_Implementation.png">
 UnaryAPI-ClientCall with Deadline <img src="Screenshots\UnaryAPI_deadline.png">
 gRPC-auth-TLC-implementation <br>
-- Error <img src="Screenshots\gRPC_auth_TLS_inSecure_Error.png">
-- Success <img src="Screenshots\gRPC_auth_TLS_inSecure_Success.png">
-gRPC-Reflection  <img src="Screenshots\EvansCLI_Reflection.png">
+    - Error <img src="Screenshots\gRPC_auth_TLS_inSecure_Error.png">
+    - Success <img src="Screenshots\gRPC_auth_TLS_inSecure_Success.png"><br>
+gRPC-Reflection - Evans CLI  <img src="Screenshots\EvansCLI_Reflection.png">
 
 Referral Links: <br>
 protocol buffers - https://grpc.io/ <br>
