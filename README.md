@@ -54,9 +54,9 @@ Client Streaming API Greet Example: <img src="Screenshots\ClientStreaming_greetE
 Client Streaming Calc Avg: <img src="Screenshots\ClientStreaming_Calc_Average.png">
 Bi-Directional API Greet Example: <img src="Screenshots\Bi-DirectionStreaming_greetExample.png">
 Bi-Directional API Calc Find Maximum: <img src="Screenshots\Bi-DirectionStreaming_Calc_FindMaximum.png">
-
+gRPC Error Implementation: <img src="Screenshots\Error_Implementation.png">
 Referral Links: <br>
 protocol buffers - https://grpc.io/ <br>
 HTTP2 vs HTTP1 - https://imagekit.io/demo/http2-vs-http1
-
+Error Codes - https://grpc.io/docs/guides/error/
 
