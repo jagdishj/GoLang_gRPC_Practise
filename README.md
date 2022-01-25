@@ -74,3 +74,8 @@ Evans CLI - https://github.com/ktr0731/evans#from-github-releases <br>
 Mongodb - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/ <br>
 Robo 3T - https://robomongo.org/download <br>
 Mongodb driver for GO - https://github.com/mongodb/mongo-go-driver <br>
+Google PubSub - https://github.com/googleapis/googleapis/blob/master/google/pubsub/v1/pubsub.proto <br>
+Google Spanner - https://github.com/googleapis/googleapis/blob/master/google/spanner/v1/spanner.proto <br>
+gRPC Gateway - https://github.com/grpc-ecosystem/grpc-gateway <br>
+gogo project - https://github.com/gogo/protobuf <br>
+gogo documentation refer - https://jbrandhorst.com/post/gogoproto/ <br>
